@@ -71,7 +71,7 @@
     display: block;
     width: 100%;
     height: 1rem;
-    background: url(/images/misc.png) no-repeat center top;
+    background: url(../images/misc.png) no-repeat center top;
     opacity: .2;
 }
 .footer__contact-info:before {
