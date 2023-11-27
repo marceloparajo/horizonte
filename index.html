@@ -199,19 +199,38 @@
     <nav class="menu">
         <ul class="menu__wrapper">
             <li class="menu__item">
-                <a href="https://horizonte.fm/" target="_blanck" rel="noreferrer">
+                <a href="https://horizonte.fm/" target="_blank" rel="noreferrer">
                     Historia
                 </a>
             </li>
             <li class="menu__item">
-                <a href="#" onclick="openMenu()">
+                <span role="button" class="pointer" onclick="openMenu()">
                     Contacto
-                </a>
+                </span>
             </li>
         </ul>
-        <div class="menu__contacto" id="js-menu-contacto">
-            <div class="menu__contacto-wrapper">
-                <h3>Escribinos y empezá a posicionar tu marca</h3>
+        <div class="contacto" id="js-contacto">
+            <div class="contacto__wrapper">
+                <h3 class="contact__title">Comunicate ahora con Radio Horizonte</h3>
+                <div class="contacto__info">
+                    <p class="contacto__text">
+                        <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.8" stroke="#333" class="contacto__mail">
+                        <path stroke-linecap="round" stroke-linejoin="round" d="M21.75 6.75v10.5a2.25 2.25 0 01-2.25 2.25h-15a2.25 2.25 0 01-2.25-2.25V6.75m19.5 0A2.25 2.25 0 0019.5 4.5h-15a2.25 2.25 0 00-2.25 2.25m19.5 0v.243a2.25 2.25 0 01-1.07 1.916l-7.5 4.615a2.25 2.25 0 01-2.36 0L3.32 8.91a2.25 2.25 0 01-1.07-1.916V6.75" />
+                    </svg>
+                    xxxxxxxx@xxxx.com</p>
+                    <p class="contacto__text"><svg viewBox="0 0 50 54" width="24" height="24"><path fill="#333" d="M37.7 31.2c-.6-.4-3.8-2-4.4-2.1-.6-.2-1-.4-1.4.3l-2 2.5c-.4.4-.8.5-1.5.2-.6-.3-2.7-1-5.1-3.2-2-1.7-3.2-3.8-3.6-4.5-.4-.6 0-1 .3-1.3l1-1.1.6-1.1c.2-.4 0-.8 0-1.1l-2-4.8c-.6-1.3-1.1-1-1.5-1.1h-1.2c-.5 0-1.2.1-1.8.8-.5.6-2.2 2.2-2.2 5.3 0 3.2 2.3 6.3 2.6 6.7.3.4 4.6 7 11 9.7l3.7 1.4c1.5.5 3 .4 4 .2 1.3-.1 3.9-1.5 4.4-3 .5-1.5.5-2.8.4-3-.2-.4-.6-.5-1.3-.8M26 47.2c-3.9 0-7.6-1-11-3l-.7-.4-8.1 2L8.4 38l-.6-.8A21.4 21.4 0 0126 4.4a21.3 21.3 0 0121.4 21.4c0 11.8-9.6 21.4-21.4 21.4M44.2 7.6a25.8 25.8 0 00-40.6 31L0 52l13.7-3.6A25.8 25.8 0 0044.3 7.5"></path></svg>54 9 11 0000-0000</p>
+                    <p class="contacto__text">Consultá nuestro MediaKit y ponete en contacto con nuestro departamento comercial al 0000-0000.</p>
+                </div>
+
+                <div class="contacto__cerrar pointer" role="button" onclick="openMenu()">
+
+                    Cerrar <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" class="contacto__x">
+                        <path stroke-linecap="round" stroke-linejoin="round" d="M6 18L18 6M6 6l12 12" />
+                    </svg>
+
+                </div>
+                  
+                <!--
                 <form action="#" class="form" method="GET" role="search">
                     <input type="text" name="nombre" placeholder="Nombre" class="form__textfield">
                     <input type="text" name="empresa-nombre" placeholder="Nombre de la empresa" class="form__textfield">
@@ -221,7 +240,8 @@
                     <button type="submit" class="form__button">
                         Enviar
                     </button>
-                </form>
+                </form>1
+                -->
             </div>
         </div>
     </nav>
@@ -243,11 +263,11 @@
         </div>
 
         <!--
-            <audio controls="controls">
-                <source src="https://playerservices.streamtheworld.com/api/livestream-redirect/SAM06AAC243_SC.aac"
-                    type="audio/ogg" />
-            </audio>
--->
+        <audio controls="controls">
+            <source src="https://playerservices.streamtheworld.com/api/livestream-redirect/SAM06AAC243_SC.aac"
+                type="audio/ogg" />
+        </audio>
+        -->
     </main>
 
 
@@ -454,20 +474,22 @@
                     </svg>
                 </a>
                 <a href="https://twitter.com/943HORIZONTE" target="_blank" title="Seguinos en X"
-                    rel="noreferrer nofollow" aria-label="Seguinos en X"><svg viewBox="0 0 22 22" aria-hidden="true"
-                        height="20" width="20">
+                    rel="noreferrer nofollow" aria-label="Seguinos en X">
+                    <svg viewBox="0 0 22 22" aria-hidden="true" height="20" width="20">
                         <g>
                             <path
                                 d="M18.244 2.25h3.308l-7.227 8.26 8.502 11.24H16.17l-5.214-6.817L4.99 21.75H1.68l7.73-8.835L1.254 2.25H8.08l4.713 6.231zm-1.161 17.52h1.833L7.084 4.126H5.117z"
                                 fill="#222"></path>
                         </g>
-                    </svg></a>
+                    </svg>
+                </a>
             </div>
             <strong>FM Horizonte</strong> es un medio de Editorial Perfil S.A.
 
             <div class="footer__links">
                 <a href="https://mediakit.perfil.com/" target="_blank" rel="noreferrer nofollow">Mediakit</a>
-                <a href="https://www.perfil.com/static/docs/brochure_perfil.pdf" target="_blank" rel="noreferrer nofollow">Quiénes somos</a>
+                <a href="https://www.perfil.com/static/docs/brochure_perfil.pdf" target="_blank"
+                    rel="noreferrer nofollow">Quiénes somos</a>
             </div>
             <a href="https://perfil.com" target="_blank" rel="noreferrer" class="footer__perfil">
                 <svg viewBox="0 0 293.64 65.76">
@@ -486,7 +508,7 @@
 
     <script>
         function openMenu() {
-            let menuContacto = document.getElementById('js-menu-contacto');
+            let menuContacto = document.getElementById('js-contacto');
             menuContacto.classList.toggle('activo');
         }
     </script>
