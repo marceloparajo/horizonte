@@ -1,6 +1,7 @@
 html,
 body {
   background: white;
+  -webkit-font-smoothing:antialiased;-moz-osx-font-smoothing:grayscale;scroll-behavior:smooth;
 }
 * {
   color: #222;
@@ -62,6 +63,13 @@ body {
   justify-content: center;
   gap: 1.5rem;
   padding: 0 0 1rem 0;
+}
+
+.footer__links {
+    padding: .5rem 0;
+    display: flex;
+    justify-content: center;
+    gap: 1rem;;
 }
 .footer__contact-info {
   font-size: 0.85rem;
