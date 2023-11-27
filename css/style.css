@@ -60,7 +60,7 @@ body {
 .footer__rrss {
   display: flex;
   justify-content: center;
-  gap: 1rem;
+  gap: 1.5rem;
   padding: 0 0 1rem 0;
 }
 .footer__contact-info {
@@ -189,12 +189,20 @@ h3 {
   display: block;
 }
 
-@media (min-width: 990px) {
+@media (min-width: 426px) {
   .main__content {
-    background-image: url(../images/b.jpg);
-  }
-  h2 {
-    font-size: 2rem;
-    text-transform: uppercase;
+    background-image: url(../images/b-md.jpg);
   }
 }
+
+
+@media (min-width: 990px) {
+    .main__content {
+      background-image: url(../images/b-full.jpg);
+    }
+    h2 {
+      font-size: 2rem;
+      text-transform: uppercase;
+    }
+  }
+  
