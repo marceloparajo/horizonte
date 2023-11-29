@@ -121,6 +121,7 @@ body {
   position: relative;
 }
 
+/*
 .player {
   margin: 1rem auto;
   max-width: 500px;
@@ -129,6 +130,22 @@ body {
   left: 50%;
   top: 50%;
   transform: translate(-50%, -70%);
+}
+*/
+
+.dpsplayer__container {
+  width: 90%;
+  max-width: 600px;
+  height: 103px;
+  border-bottom: 9px solid #ec2027;
+  overflow: hidden;
+  margin: 1rem auto;
+}
+.dpsplayer__wrapper {
+  overflow: hidden;
+  border: none;
+  width: 100%;
+  height: 94px;
 }
 
 h2 {
