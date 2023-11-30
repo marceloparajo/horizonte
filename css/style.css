@@ -26,12 +26,18 @@ body {
   font-size: 0.9rem;
   padding-bottom: 1rem;
   position: relative;
+  background: #222;
+  border-bottom: 1px solid #ec2027;
 }
 .menu__wrapper {
+  max-width: 1300px;
+  margin: auto;
   display: flex;
   justify-content: center;
+  align-items: center;
   list-style: none;
   gap: 1rem;
+  padding: 0 1rem;
 }
 .menu__item {
   text-transform: uppercase;
@@ -39,9 +45,34 @@ body {
 }
 .menu__item a {
   text-decoration: none;
+  color: white;
+}
+.menu__item--vivo {
+  margin-left: auto;
+  background: white;
+  border-radius: 30px;
+  padding: 0.5rem;
+  display: flex;
+  gap: .3rem;
+  flex-wrap: nowrap;
+  align-items: center;
+}
+.menu__item--vivo::before {
+  content: "";
+  display: block;
+  width: 10px;
+  height: 10px;
+  border-radius: 50%;
+  animation-name: live-led;
+  animation-duration: 1.3s;
+  animation-iteration-count: infinite;
+}
+.menu__item--vivo a {
+  color: #222;
 }
 .pointer {
-    cursor: pointer;
+  cursor: pointer;
+  color: white;
 }
 
 /* footer */
@@ -168,10 +199,11 @@ h3 {
 .contacto {
   width: 100%;
   background: #f3f3f3;
-  box-shadow: 0 1px 0 0 inset rgba(237, 33, 40, 1), 0 15px 15px 0 rgba(0, 0, 0, 0.15);
+  box-shadow: 0 1px 0 0 inset rgba(237, 33, 40, 1),
+    0 15px 15px 0 rgba(0, 0, 0, 0.15);
   position: absolute;
   z-index: 3;
-  top: 48px;
+  top: 66px;
   overflow: hidden;
   max-height: 0;
   transition: ease 0.3s;
@@ -210,20 +242,20 @@ p.contacto__text {
   width: 25px;
 }
 .contacto__cerrar {
-    display: flex;
-    justify-content: flex-end;
-    gap: .2rem;
-    max-width: 500px;
-    margin: 1rem auto;
-    align-items: center;
-    font-weight: bold;
-    text-transform: uppercase;
-    color: #333;
+  display: flex;
+  justify-content: flex-end;
+  gap: 0.2rem;
+  max-width: 500px;
+  margin: 1rem auto;
+  align-items: center;
+  font-weight: bold;
+  text-transform: uppercase;
+  color: #333;
 }
 .contacto__x {
-    width: 26px;
-    border: 2px solid #333;
-    border-radius: 20px;
+  width: 26px;
+  border: 2px solid #333;
+  border-radius: 20px;
 }
 
 /* Formulario Contacto */
@@ -278,5 +310,18 @@ p.contacto__text {
   h2 {
     font-size: 2rem;
     text-transform: uppercase;
+  }
+}
+
+
+@keyframes live-led {
+  0% {
+    background-color: red
+  }
+  50% {
+    background-color: #900
+  }
+  to {
+    background-color: red
   }
 }
