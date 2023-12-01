@@ -28,6 +28,11 @@
     };
   </script>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
-  <script src="includes/js/dist/infiny-bar-1.1.0.min.js?v=<?php echo rand(1,999999); ?>"></script>
-</body>
+  <script>
+    var randomNumber = Math.floor(Math.random() * 999999) + 1;
+    var scriptElement = document.createElement('script');
+    scriptElement.src = 'includes/js/dist/infiny-bar-1.1.0.min.js?v=' + randomNumber;
+    document.head.appendChild(scriptElement);
+  </script>
+  </body>
 </html>
